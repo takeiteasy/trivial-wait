@@ -25,5 +25,4 @@ It costs a read of every watched file per interval.
 
 epoll, inotify, IOCP and ReadDirectoryChangesW are not bound yet, nor are
 the BSD kqueue layouts: `struct kevent` differs on each BSD, so each needs
-its own binding, tested on the platform. See the
-[tracker](https://todo.sr.ht/~takeiteasy/trivial-wait).
+its own binding, tested on the platform.
