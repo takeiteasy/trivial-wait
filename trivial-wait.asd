@@ -13,7 +13,7 @@ readiness and filesystem events."
   :license "GPLv3"
   :version "0.1.0"
   :depends-on ("cffi")
-  :pathname "src/kqueue/"
+  :pathname "kqueue/"
   :serial t
   :components ((:file "package")
                (:file "kqueue")))
@@ -24,7 +24,7 @@ readiness and filesystem events."
   :license "GPLv3"
   :version "0.1.0"
   :depends-on ("cffi" "trivial-wait/kqueue")
-  :pathname "src/poll/"
+  :pathname "poll/"
   :serial t
   :components ((:file "package")
                (:file "poll")
@@ -38,7 +38,7 @@ readiness and filesystem events."
   :license "GPLv3"
   :version "0.1.0"
   :depends-on ("cffi" "uiop" "bordeaux-threads" "trivial-wait/kqueue")
-  :pathname "src/notify/"
+  :pathname "notify/"
   :serial t
   :components ((:file "package")
                (:file "files")
