@@ -2,7 +2,7 @@
   :description "Wrappers over what a platform gives for waiting: descriptor
 readiness and filesystem events."
   :author "George Watson"
-  :license "GPLv3"
+  :license "MIT"
   :version "0.1.0"
   :depends-on ("trivial-wait/poll" "trivial-wait/notify")
   :in-order-to ((test-op (test-op "trivial-wait/tests"))))
@@ -10,7 +10,7 @@ readiness and filesystem events."
 (defsystem "trivial-wait/kqueue"
   :description "The kqueue calls both halves share."
   :author "George Watson"
-  :license "GPLv3"
+  :license "MIT"
   :version "0.1.0"
   :depends-on ("cffi")
   :pathname "kqueue/"
@@ -21,7 +21,7 @@ readiness and filesystem events."
 (defsystem "trivial-wait/poll"
   :description "Wait for descriptors to become ready."
   :author "George Watson"
-  :license "GPLv3"
+  :license "MIT"
   :version "0.1.0"
   :depends-on ("cffi" "trivial-wait/kqueue")
   :pathname "poll/"
@@ -35,7 +35,7 @@ readiness and filesystem events."
 (defsystem "trivial-wait/notify"
   :description "Watch files and directories for changes."
   :author "George Watson"
-  :license "GPLv3"
+  :license "MIT"
   :version "0.1.0"
   :depends-on ("cffi" "uiop" "bordeaux-threads" "trivial-wait/kqueue")
   :pathname "notify/"
