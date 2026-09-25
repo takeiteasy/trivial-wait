@@ -19,6 +19,7 @@ system:
 - [Polling descriptors](docs/poll.md)
 - [Watching files](docs/notify.md)
 - [Backends](docs/backends.md)
+- [CI](docs/ci.md)
 
 ## License
 

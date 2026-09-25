@@ -1,0 +1,15 @@
+image: debian/stable
+packages:
+  - curl
+  - sbcl
+sources:
+  - https://git.sr.ht/~takeiteasy/trivial-wait
+tasks:
+  - quicklisp: |
+      curl -fsSL --retry 5 -o quicklisp.lisp https://beta.quicklisp.org/quicklisp.lisp
+      sbcl --non-interactive --load quicklisp.lisp \
+           --eval '(quicklisp-quickstart:install)'
+      ln -s "$HOME/trivial-wait" "$HOME/quicklisp/local-projects/trivial-wait"
+  - test: |
+      cd trivial-wait
+      tests/test.sh sbcl
